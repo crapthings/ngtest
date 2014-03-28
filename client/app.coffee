@@ -1,17 +1,27 @@
-@app = angular.module 'app', []
+angular.module 'app', []
 
 ngMeteor.config ($stateProvider, $urlRouterProvider) ->
 
-	$urlRouterProvider.otherwise '/leftmenu/notes'
+	$urlRouterProvider.otherwise '/signin'
 
 	$stateProvider
+
+		.state 'signin',
+			url: '/signin'
+			template: getTemplate 'signin'
+			controller: 'signinCtrl'
+
+		.state 'signup',
+			url: '/signup'
+			template: getTemplate 'signup'
+			controller: 'signupCtrl'
 
 		.state 'leftMenu',
 			url: '/leftmenu'
 			abstract: true
-			template: Template.leftMenu
+			template: getTemplate 'leftMenu'
 			controller: 'notesCtrl'
 
 		.state 'leftMenu.notes',
 			url: '/notes'
-			template: Template.notes
+			template: getTemplate 'notes'

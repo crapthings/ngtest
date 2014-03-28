@@ -4,7 +4,7 @@ ngMeteor.controller 'notesCtrl', ($scope, $collection, $ionicModal) ->
 		sort:
 			createdAt: -1
 
-	$scope.noteModal = $ionicModal.fromTemplate Template['newNote'](),
+	$scope.noteModal = $ionicModal.fromTemplate getTemplate 'newNote',
 		scope: $scope
 		animation: 'slide-in-up'
 
