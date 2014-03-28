@@ -2,6 +2,7 @@
   "packages": {
     "ngMeteor": {},
     "angular-ui-router": {},
-    "ionic": {}
+    "ionic": {},
+    "collection-hooks": {}
   }
 }

@@ -4,7 +4,8 @@
     "basePackages": {
       "ngMeteor": {},
       "angular-ui-router": {},
-      "ionic": {}
+      "ionic": {},
+      "collection-hooks": {}
     },
     "packages": {
       "ngMeteor": {
@@ -21,6 +22,11 @@
         "git": "https://github.com/cramrov/meteor-ionic.git",
         "tag": "v0.10.0",
         "commit": "1b73928b8465d0886e60076a7ac79b1140de99bc"
+      },
+      "collection-hooks": {
+        "git": "https://github.com/matb33/meteor-collection-hooks.git",
+        "tag": "v0.6.3",
+        "commit": "70f2598bf991cb36effd72aea2555cba96f88355"
       },
       "bower": {
         "git": "https://github.com/mquandalle/meteor-bower.git",

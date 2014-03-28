@@ -1,18 +1,17 @@
-app = angular.module 'app', []
-
-# app = angular.module 'app', ['ngTouch', 'ui.router', 'ionic']
+@app = angular.module 'app', []
 
 ngMeteor.config ($stateProvider, $urlRouterProvider) ->
 
-	$urlRouterProvider.otherwise '/sidemenu/home'
+	$urlRouterProvider.otherwise '/leftmenu/notes'
 
 	$stateProvider
 
-		.state 'sidemenu',
-			url: '/sidemenu'
+		.state 'leftMenu',
+			url: '/leftmenu'
 			abstract: true
-			template: Template.sidemenu
+			template: Template.leftMenu
+			controller: 'notesCtrl'
 
-		.state 'sidemenu.home',
-			url: '/home'
-			template: Template.home
+		.state 'leftMenu.notes',
+			url: '/notes'
+			template: Template.notes
