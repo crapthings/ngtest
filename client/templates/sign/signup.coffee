@@ -1,15 +1,9 @@
-ngMeteor.controller 'signupCtrl', ($scope) ->
-
-	$scope.user =
-		username: ''
-		password: ''
-		profile:
-			displayName: ''
-			mobile: ''
+ngMeteor.controller 'signupCtrl', ['$scope', '$state', ($scope, $state) ->
 
 	$scope.signup = (user) ->
-		Accounts.createUser user.username, user.password, (err) ->
+		Accounts.createUser user, (err) ->
 			unless err
-				console.log Meteor.user()
+				$state.go 'menu.notes'
 			else
 				alert err
+]

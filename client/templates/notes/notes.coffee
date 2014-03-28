@@ -1,10 +1,10 @@
-ngMeteor.controller 'notesCtrl', ($scope, $collection, $ionicModal) ->
+ngMeteor.controller 'notesCtrl', ['$scope', '$collection', '$ionicModal', ($scope, $collection, $ionicModal) ->
 
-	$collection 'Notes', $scope, {},
+	$collection 'Notes', $scope, { creatorId: Meteor.userId() },
 		sort:
 			createdAt: -1
 
-	$scope.noteModal = $ionicModal.fromTemplate getTemplate 'newNote',
+	$scope.noteModal = $ionicModal.fromTemplate getTemplate('newNote'),
 		scope: $scope
 		animation: 'slide-in-up'
 
@@ -14,7 +14,7 @@ ngMeteor.controller 'notesCtrl', ($scope, $collection, $ionicModal) ->
 	$scope.closeModal = ->
 		$scope.noteModal.hide()
 
-	$scope.newNote = ->
+	$scope.openNoteModal = ->
 		$scope.openModal()
 
 	$scope.createNote = (note) ->
@@ -22,3 +22,4 @@ ngMeteor.controller 'notesCtrl', ($scope, $collection, $ionicModal) ->
 		$scope.closeModal()
 		note.title = ''
 		note.content = ''
+]
