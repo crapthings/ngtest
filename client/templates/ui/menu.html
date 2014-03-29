@@ -1,6 +1,7 @@
 <template name="menu">
 
 	<ion-side-menus>
+
 		<ion-side-menu-content>
 			<ion-nav-bar class="bar-positive">
 				<ion-nav-back-button class="button-icon ion-arrow-left-c"></ion-nav-back-button>
@@ -8,43 +9,10 @@
 			<ion-nav-view></ion-nav-view>
 		</ion-side-menu-content>
 
-		<ion-side-menu side="left">
-			<ion-header-bar align-title="left" class="bar-positive">
-				<h1 class="title">球果通信</h1>
-			</ion-header-bar>
-			<ion-content has-header="true" scroll="true">
-				<div class="list">
-					<div class="item item-divider">我的</div>
-					<a nav-clear menu-close ui-sref="menu.notes" class="item">笔记</a>
-					<a nav-clear menu-close ui-sref="menu.todos" class="item">任务</a>
-					<div class="item item-divider">公司</div>
-					<a href="" class="item">任务</a>
-					<a href="" class="item">项目</a>
-					<a href="" class="item">通知</a>
-					<a href="" class="item">同事</a>
-					<div class="item item-divider">功能</div>
-					<a class="item" ng-click="signout()">退出</a>
-				</div>
-			</ion-content>
-		</ion-side-menu>
+		{{> leftSide}}
 
-		<ion-side-menu side="right">
-			<ion-header-bar align-title="left" class="bar-positive">
-				<h1 class="title">球果通信</h1>
-			</ion-header-bar>
-			<ion-content has-header="true" scroll="true">
-				<div class="list">
-					<div class="item item-divider">我的</div>
-					<a href="" class="item">笔记</a>
-					<a href="" class="item">任务</a>
-					<div class="item item-divider">公司</div>
-					<a href="" class="item">任务</a>
-					<a href="" class="item">项目</a>
-					<a href="" class="item">通知</a>
-					<a href="" class="item">同事</a>
-				</div>
-			</ion-content>
-		</ion-side-menu>
+		{{> rightSide}}
+
 	</ion-side-menus>
 
 </template>

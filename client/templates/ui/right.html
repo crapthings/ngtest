@@ -1,0 +1,20 @@
+<template name="rightSide">
+
+	<ion-side-menu side="right">
+		<ion-header-bar align-title="left" class="bar-positive">
+			<h1 class="title">{{currentUser.profile.displayName}}</h1>
+		</ion-header-bar>
+		<ion-content has-header="true" scroll="true">
+			<div class="list">
+				<div class="item item-divider">交流</div>
+				<a href="" class="item">同事圈</a>
+				<a href="" class="item">私信</a>
+				<div class="item item-divider">功能</div>
+				<a class="item">个人档案</a>
+				<a class="item">系统设置</a>
+				<a class="item" ng-click="signout()">退出</a>
+			</div>
+		</ion-content>
+	</ion-side-menu>
+
+</template>

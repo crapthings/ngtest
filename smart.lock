@@ -10,8 +10,8 @@
     "packages": {
       "ngMeteor": {
         "git": "https://github.com/loneleeandroo/ngMeteor.git",
-        "tag": "v0.1.21",
-        "commit": "381fa5074db86fb4b6084d4bdf47d4e020fedc54"
+        "tag": "v0.1.22",
+        "commit": "170d9309fe16d7d38bffc1a6ce42a379be27cdaa"
       },
       "angular-ui-router": {
         "git": "https://github.com/ccll/meteor-angular-ui-router.git",
