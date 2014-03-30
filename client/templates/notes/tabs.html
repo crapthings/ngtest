@@ -1,0 +1,23 @@
+<template name="notesTabs">
+
+	<ion-tabs class="tabs-icon-top tabs-secondary">
+
+		<ion-tab title="最近" icon="ion-compose" ui-sref="menu.notes.latest">
+			<ion-nav-view name="latest"></ion-nav-view>
+		</ion-tab>
+
+		<ion-tab title="重要" icon="ion-alert" ui-sref="menu.notes.important">
+			<ion-nav-view name="important"></ion-nav-view>
+		</ion-tab>
+
+		<ion-tab title="置顶" icon="ion-pin" ui-sref="menu.notes.sticky">
+			<ion-nav-view name="sticky"></ion-nav-view>
+		</ion-tab>
+
+		<ion-tab title="查看" icon="ion-eye">
+			<ion-nav-view name="view"></ion-nav-view>
+		</ion-tab>
+
+	</ion-tabs>
+
+</template>

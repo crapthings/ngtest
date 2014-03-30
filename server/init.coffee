@@ -1,5 +1,12 @@
 Meteor.startup ->
 
+	isSystemExist = System.findOne { config: true }
+
+	unless isSystemExist
+
+		System.insert
+			config: true
+
 	isAdminExist = Users.findOne { username : 'admin' }
 
 	unless isAdminExist

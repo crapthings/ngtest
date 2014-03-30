@@ -5,11 +5,7 @@
 			<h1 class="title">注册</h1>
 		</ion-header-bar>
 		<ion-content>
-			<div class="card">
-				<div class="item item-text-wrap">
-					<p>新注册的用户需要等待审核通过才可以登录。</p>
-				</div>
-			</div>
+			<div class="item item-divider" ng-show="notice">[[notice]]</div>
 			<form ng-submit="signup(user)">
 				<div class="list">
 					<label class="item item-input">
