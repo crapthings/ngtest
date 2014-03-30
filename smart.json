@@ -3,6 +3,9 @@
     "ngMeteor": {},
     "angular-ui-router": {},
     "ionic": {},
-    "collection-hooks": {}
+    "collection-hooks": {},
+    "fast-render": {},
+    "moment-with-langs": {},
+    "livestamp": {}
   }
 }

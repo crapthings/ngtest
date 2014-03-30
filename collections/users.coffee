@@ -1,5 +1,10 @@
 @Users = Meteor.users
 
+Users.allow
+	update: (userId, user) ->
+		if userId is user._id
+			return true
+
 Meteor.methods
 
 	updateProfile: (options) ->

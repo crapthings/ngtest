@@ -1,5 +1,8 @@
-ngMeteor.controller 'viewNoteCtrl', ['$scope', '$rootScope', '$collection', '$ionicTabsDelegate', '$ionicModal', ($scope, $rootScope, $collection, $ionicTabsDelegate, $ionicModal) ->
+ngMeteor.controller 'viewNoteCtrl', ['$scope', '$state', '$collection', ($scope, $state, $collection) ->
 
-	# ($ 'div.tabs').hide()
+	$collection 'Notes', $scope, { _id: $state.params._id }
+
+	$scope.Notes.ready ->
+		$scope.note = Notes.findOne { _id: $state.params._id }
 
 ]

@@ -5,7 +5,10 @@
       "ngMeteor": {},
       "angular-ui-router": {},
       "ionic": {},
-      "collection-hooks": {}
+      "collection-hooks": {},
+      "fast-render": {},
+      "moment-with-langs": {},
+      "livestamp": {}
     },
     "packages": {
       "ngMeteor": {
@@ -15,8 +18,8 @@
       },
       "angular-ui-router": {
         "git": "https://github.com/ccll/meteor-angular-ui-router.git",
-        "tag": "v0.2.2",
-        "commit": "5b10a69b961bc6a89a81f7a28d1bf93408a5ae4c"
+        "tag": "v0.3.2",
+        "commit": "2bafcc0f51da5b7e60561f57356d52e08a6fad87"
       },
       "ionic": {
         "git": "https://github.com/cramrov/meteor-ionic.git",
@@ -27,6 +30,21 @@
         "git": "https://github.com/matb33/meteor-collection-hooks.git",
         "tag": "v0.6.3",
         "commit": "70f2598bf991cb36effd72aea2555cba96f88355"
+      },
+      "fast-render": {
+        "git": "https://github.com/arunoda/meteor-fast-render.git",
+        "tag": "v0.1.23",
+        "commit": "933b9d8992f1c7004f9993b1b15dffe3bac672f3"
+      },
+      "moment-with-langs": {
+        "git": "https://github.com/jeeeyul/meteor-moment-with-langs.git",
+        "tag": "v2.5.1",
+        "commit": "75f725898f6d5c3dddc54f1f619fe3b184f596a2"
+      },
+      "livestamp": {
+        "git": "https://github.com/colllin/meteor-livestamp.git",
+        "tag": "v1.1.2.1",
+        "commit": "070821be066925e5177daf1d3398c759c45b15b4"
       },
       "bower": {
         "git": "https://github.com/mquandalle/meteor-bower.git",

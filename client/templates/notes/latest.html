@@ -13,14 +13,12 @@
 
 			<div class="list">
 				<div class="item item-divider">置顶</div>
-				<a class="item" ng-repeat="note in Notes | filter: { sticky: true} | limitTo: 3" ui-sref="menu.notes.view({ _id: note._id })">
-					<p>[[note.title]]</p>
-					<p>[[note._id]]</p>
-				</a>
+				<a class="item" ng-repeat="note in Notes | filter: { sticky: true} | limitTo: 3" ui-sref="menu.notes.view({ _id: note._id })">[[note.title]]</a>
 				<div class="item item-divider">最近</div>
 				<div class="card" ng-repeat="note in Notes">
 					<div class="item item-divider" ng-show="note.title">[[note.title]]</div>
 					<div class="item item-text-wrap">
+						<span style="font-size: 11px;" data-livestamp="[[note._createdAt]]">[[note._createdAt]]</span>
 						<p>[[note.content]]</p>
 					</div>
 				</div>
